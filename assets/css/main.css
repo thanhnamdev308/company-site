@@ -1,3 +1,46 @@
-.header {
+.nav {
+    min-height: 42px;
+    background-color: var(--background-color-dark);
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav__logo {
+    color: #fff;
+    line-height: 42px;
+    margin: auto 12px;
+}
+
+.nav__list {
+    display: flex;
+    margin: auto;
+}
+
+.nav__list a {
+    padding: 0 50px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#introduction {
+    padding-top: 42px;
+    min-height: 500px;
+}
+
+#products {
+    padding-top: 42px;
+    min-height: 500px;
+}
+
+#contact {
+    padding-top: 42px;
+    min-height: 500px;
+}
+
+#footer {
+    min-height: 500px;
 }
