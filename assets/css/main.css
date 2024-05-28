@@ -1,3 +1,4 @@
+/* Navigation CSS */
 .nav {
     min-height: 42px;
     background-color: var(--white-color);
@@ -39,22 +40,159 @@
     color: var(--text-color-blue);
 }
 
+.nav__btn {
+    width: 21px;
+    height: 21px;
+    margin-top: 9px;
+    margin-left: 10px;
+    color: var(--text-color-black);
+    display: none;
+}
+
+.nav__btn:hover {
+    opacity: 0.6;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav__mobile-list {
+    padding-inline-start: 0px;
+    margin-top: 40px;
+}
+
+.nav__mobile a {
+    display: block;
+    padding-left: 40px;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color-black);
+    font-size: large;
+}
+
+.nav__mobile a:hover {
+    color: var(--text-color-blue);
+}
+
+.nav__mobile-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 20px;
+    height: 20px;
+    color: var(--text-color-black);
+}
+
+.nav__mobile-close:hover {
+    opacity: 0.6;
+}
+
+.nav__input {
+    display: none;
+}
+
+.nav__input:checked~.nav__overlay {
+    display: block;
+}
+
+.nav__input:checked~.nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* End Navigation CSS */
+
+/* Introduction CSS */
 #introduction {
     padding-top: 42px;
     min-height: 500px;
     background-color: var(--background-color-grey);
 }
 
+/* End Introduction CSS */
+
+/* Products CSS */
 #products {
     padding-top: 42px;
     min-height: 500px;
 }
 
+/* End Products CSS */
+
+/* Contact CSS */
 #contact {
     padding-top: 42px;
     min-height: 500px;
 }
 
+/* End Contact CSS */
+
+/* Footer CSS */
 #footer {
     min-height: 500px;
 }
+
+/* End Footer CSS */
+
+/* nav responsive */
+@media (max-width: 900px) {
+    .nav__list a {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 740px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-self: center;
+    }
+
+    .nav__btn {
+        display: block;
+    }
+
+    .nav__mobile {
+        display: block;
+    }
+}
+
+/* End nav responsive */
