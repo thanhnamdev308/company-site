@@ -155,13 +155,16 @@
 #contact {
     padding-top: 42px;
     min-height: 500px;
+    background-color: var(--background-color-grey);
 }
 
 /* End Contact CSS */
 
 /* Footer CSS */
 #footer {
+    padding-top: 42px;
     min-height: 500px;
+    background-color: #f1f1f1;
 }
 
 /* End Footer CSS */
