@@ -135,10 +135,22 @@
 /* End Navigation CSS */
 
 /* Introduction CSS */
-#introduction {
-    padding-top: 42px;
-    min-height: 500px;
-    background-color: var(--background-color-grey);
+.intro__body {
+    margin-top: 42px;
+}
+
+.intro__photo {
+    background-color: bisque;
+}
+
+.intro__company-image {
+    margin: auto;
+    width: 80%;
+}
+
+.intro__content {
+    /* min-height: 400px; */
+    background-color: darkcyan;
 }
 
 /* End Introduction CSS */
