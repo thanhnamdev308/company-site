@@ -137,8 +137,6 @@
 /* Introduction CSS */
 .intro__body {
     padding-top: 42px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     max-height: fit-content;
 }
 
@@ -146,6 +144,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .intro__company-image {
@@ -163,9 +163,8 @@
 }
 
 .intro__paragraph {
-    width: 70%;
+    width: 90%;
     line-height: 1.6;
-    margin-top: 20px;
 }
 
 /* End Introduction CSS */
@@ -173,7 +172,39 @@
 /* Products CSS */
 #products {
     padding-top: 42px;
-    min-height: 500px;
+    padding-bottom: 42px;
+}
+
+/* .products__filter {
+    background-color: bisque;
+} */
+
+.products__filter-content {
+    background-color: ghostwhite;
+    min-height: 300px;
+    margin-top: 16px;
+}
+
+.products__category-title {
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.products__category-list {
+    padding-bottom: 16px;
+}
+
+.products__list {
+    /* background-color: coral; */
+    padding-bottom: 16px;
+}
+
+.products__item {
+    margin-top: 16px;
+    background-color: ghostwhite;
+    min-height: 300px;
 }
 
 /* End Products CSS */

@@ -24,6 +24,10 @@ html {
     box-sizing: border-box;
 }
 
+.clear {
+    clear: both;
+}
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;

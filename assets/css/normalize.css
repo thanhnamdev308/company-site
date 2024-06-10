@@ -81,7 +81,13 @@ pre {
    */
 
 a {
-    background-color: transparent;
+    all: unset;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding-inline-start: 0px;
 }
 
 /**
