@@ -172,7 +172,6 @@
 /* Products CSS */
 #products {
     padding-top: 42px;
-    padding-bottom: 42px;
 }
 
 /* .products__filter {
@@ -190,6 +189,8 @@
     padding-left: 16px;
     font-size: large;
     font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .products__category-list {
@@ -214,6 +215,46 @@
     padding-top: 42px;
     min-height: 500px;
     background-color: var(--background-color-grey);
+}
+
+.contact__heading {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact__info-content {
+    margin-left: 25%;
+}
+
+.contact__form-content {
+    margin-left: 25%;
+}
+
+.contact__form .form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#submit-form-button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    float: right;
+    color: #fff;
+    background-color: var(--text-color-blue);
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+#submit-form-button:hover {
+    opacity: 0.8;
 }
 
 /* End Contact CSS */
