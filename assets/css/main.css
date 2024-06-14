@@ -135,7 +135,6 @@
         opacity: 1;
     }
 }
-
 /* End Navigation CSS */
 
 /* Introduction CSS */
@@ -174,7 +173,6 @@
     width: 90%;
     font-size: 17px;
 }
-
 /* End Introduction CSS */
 
 /* Products CSS */
@@ -247,8 +245,9 @@
     margin: 10px;
     font-size: 15px;
     font-weight: 400;
+    text-wrap: nowrap;
+    overflow: hidden;
 }
-
 /* End Products CSS */
 
 /* Contact CSS */
@@ -312,18 +311,47 @@
 }
 
 .contact__info-content {
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
+.contact__info-content:nth-child(1) {
+    padding-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.contact__info-icon {
+    width: 14px;
+    margin-right: 10px;
+}
 /* End Contact CSS */
 
 /* Footer CSS */
 #footer {
-    padding-top: 42px;
-    min-height: 500px;
     background-color: #f1f1f1;
+    padding: 50px 16px;
+    text-align: center;
 }
 
+.socialnetwork-icon {
+    width: 20px;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.socialnetwork-icon:hover {
+    opacity: 0.4;
+}
+
+.copyright {
+    margin-top: 4px;
+    font-size: 14px;
+    opacity: 0.6;
+}
 /* End Footer CSS */
 
 /* nav responsive */
@@ -368,7 +396,6 @@
         width: 90%;
     }
 }
-
 /* End nav responsive */
 
 /* contact responsive */
@@ -376,6 +403,11 @@
     .contact__form-content {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    .products__item-origin {
+        font-size: 12px;
+        font-weight: 300;
     }
 
     .contact__form {
@@ -397,6 +429,10 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .contact__info-content {
+        margin-left: 50px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -405,6 +441,26 @@
         margin-left: auto;
         margin-right: auto;
     }
-}
 
+    .contact__info-content {
+        margin-left: 32px;
+    }
+}
 /* End contact responsive */
+
+/* product responsive */
+@media (max-width: 1439px) {
+    .products__item-name {
+        font-size: 16px;
+
+    }
+    
+    .products__item-price {
+        font-size: 16px;
+    }
+
+    .products__item-origin {
+        font-size: 12px;
+    }
+}
+/* End product responsive */
