@@ -205,7 +205,40 @@
 .products__item {
     margin-top: 16px;
     background-color: ghostwhite;
-    min-height: 300px;
+}
+
+.products__item-img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.products__item-name {
+    font-size: 18px;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.products__item-price {
+    font-size: 18px;
+    margin: 10px;
+    color: var(--text-color-blue);
+}
+
+.products__item-origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* End Products CSS */

@@ -13,8 +13,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
+    /* margin-left: -4px;
+    margin-right: -4px; */
 }
 
 .row__no-gutters {
@@ -142,10 +142,10 @@
 
 /* >= Tablet */
 @media (min-width: 740px) {
-    .row {
+    /* .row {
         margin-left: -8px;
         margin-right: -8px;
-    }
+    } */
 
     .col {
         padding-left: 8px;
@@ -277,7 +277,7 @@
 }
 
 /* PC medium resolution > */
-@media (min-width: 1113px) {
+@media (min-width: 1024px) {
     .row {
         margin-left: -12px;
         margin-right: -12px;
@@ -430,13 +430,19 @@
 
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .wide {
-        width: 644px;
+    .grid {
+        max-width: 644px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .grid {
+        max-width: 1024px;
     }
 }
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
+/* @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 984px;
     }
@@ -589,4 +595,4 @@
     .wide .l-o-11 {
         margin-left: 91.66667%;
     }
-}
+} */
