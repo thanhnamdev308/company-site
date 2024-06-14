@@ -319,38 +319,45 @@
             <div class="grid">
                 <div class="contact__heading">Liên hệ với chúng tôi</div>
                 <div class="row">
-                    <div class="contact__form col l-6 m-6 c-12">
+                    <div class="contact__form col l-6 m-12 c-12">
                         <form action="">
                             <div class="contact__form-content row">
                                 <div>Họ và tên:</div>
                                 <input type="text" id="contact__form-name" placeholder="Nhập họ và tên của bạn"
-                                    class="form-control" required>
+                                    class="form-input-field" required>
                             </div>
                             <div class="contact__form-content row">
                                 <div>Số điện thoại:</div>
                                 <input type="text" id="contact__form-phone" placeholder="Nhập số điện thoại"
-                                    class="form-control" required>
+                                    class="form-input-field" required>
                             </div>
                             <div class="contact__form-content row">
                                 <div>Email:</div>
                                 <input type="email" id="contact__form-email" placeholder=" Nhập email"
-                                    class="form-control" required>
+                                    class="form-input-field" required>
                             </div>
                             <div class="contact__form-content row">
                                 <div>Tiêu đề:</div>
-                                <input type="text" id="contact__form-topic" placeholder="Chọn tiêu đề"
-                                    class="form-control" required>
+                                <select type="text" id="contact__form-topic" placeholder="Chọn tiêu đề"
+                                    class="form-input-field" required>
+                                    <option value="option1">Chọn tiêu đề</option>
+                                    <option value="option2">Tôi muốn mua hàng</option>
+                                    <option value="option3">Tôi muốn đăng ký làm nhà phân phối</option>
+                                    <option value="option4">Khác</option>
+                                </select>
                             </div>
                             <div class="contact__form-content row">
                                 <div>Nội dung:</div>
-                                <input type="text" id="contact__form-message" placeholder="Nhập nội dung"
-                                    class="form-control" required>
+                                <textarea id="contact__form-message" placeholder="Nhập nội dung"
+                                    class="form-input-field" required></textarea>
                             </div>
-                            <div class="contact__form-content row"><button type="submit"
-                                    id="submit-form-button">Gửi</button></div>
+                            <div class="contact__form-content row">
+                                <button type="submit" id="submit-form-button">Gửi</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="contact__info col l-6 m-6 c-12">
+                    <div class="contact__info col l-6 m-12 c-12">
+                        <div class="contact__info-content row">Thông tin liên hệ:</div>
                         <div class="contact__info-content row">Trụ sở công ty: Chicago, US</div>
                         <div class="contact__info-content row">Điện thoại: +00 151515</div>
                         <div class="contact__info-content row">Email: mail@mail.com</div>
@@ -372,6 +379,14 @@
     function toggleNavInput() {
         navInput.checked = false;
     }
+
+    // const selectElement = document.getElementById("contact__form-topic");
+
+    // // Example: Adding options dynamically
+    // const newOption = document.createElement("option");
+    // newOption.value = "newOptionValue";
+    // newOption.text = "Khác";
+    // selectElement.add(newOption);
 </script>
 
 </html>

@@ -32,6 +32,7 @@
     padding: 0 50px;
     line-height: 42px;
     text-decoration: none;
+    cursor: pointer;
     font-weight: 500;
     color: var(--text-color-black);
 }
@@ -47,6 +48,7 @@
     margin-left: 10px;
     color: var(--text-color-black);
     display: none;
+    cursor: pointer;
 }
 
 .nav__btn:hover {
@@ -90,6 +92,7 @@
     font-weight: 500;
     color: var(--text-color-black);
     font-size: large;
+    cursor: pointer;
 }
 
 .nav__mobile a:hover {
@@ -103,6 +106,7 @@
     width: 20px;
     height: 20px;
     color: var(--text-color-black);
+    cursor: pointer;
 }
 
 .nav__mobile-close:hover {
@@ -135,6 +139,10 @@
 /* End Navigation CSS */
 
 /* Introduction CSS */
+#introduction {
+    background-color: var(--background-color-grey);
+}
+
 .intro__body {
     padding-top: 42px;
     max-height: fit-content;
@@ -144,8 +152,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .intro__company-image {
@@ -164,7 +172,7 @@
 
 .intro__paragraph {
     width: 90%;
-    line-height: 1.6;
+    font-size: 17px;
 }
 
 /* End Introduction CSS */
@@ -260,23 +268,32 @@
     letter-spacing: 1px;
 }
 
-.contact__info-content {
-    margin-left: 25%;
+.contact__form {
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .contact__form-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
     margin-left: 25%;
+    margin-right: 10px;
 }
 
-.contact__form .form-control {
+.contact__form .form-input-field {
+    width: 70%;
     padding: 8px;
     border: 1px solid #ccc;
+}
+
+#contact__form-message {
+    height: 100px;
 }
 
 #submit-form-button {
     margin-top: 16px;
     margin-bottom: 16px;
-    float: right;
     color: #fff;
     background-color: var(--text-color-blue);
     padding: 8px 16px;
@@ -288,6 +305,14 @@
 
 #submit-form-button:hover {
     opacity: 0.8;
+}
+
+.contact__info {
+    margin-top: 130px;
+}
+
+.contact__info-content {
+    margin-left: 30%;
 }
 
 /* End Contact CSS */
@@ -345,3 +370,41 @@
 }
 
 /* End nav responsive */
+
+/* contact responsive */
+@media (max-width: 1023px) {
+    .contact__form-content {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .contact__form {
+        margin-bottom: 0;
+    }
+
+    .contact__info {
+        margin-top:30px;
+        margin-bottom: 60px;
+    }
+    
+    .contact__info-content {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 740px) {
+    .contact__form-content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact__form-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* End contact responsive */
