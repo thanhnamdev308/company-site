@@ -22,6 +22,7 @@ html {
     line-height: 160%;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .clear {
