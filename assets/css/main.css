@@ -398,8 +398,32 @@
 }
 /* End nav responsive */
 
-/* contact responsive */
+/* intro responsive */
 @media (max-width: 1023px) {
+    .intro__photo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .intro__paragraph {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 740px) {
+    .intro__company-image {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .intro__paragraph {
+        width: 80%;
+    }
+}
+/* End intro responsive */
+
+/* contact responsive */
+@media (max-width: 1024px) {
     .contact__form-content {
         margin-left: 16px;
         margin-right: 16px;
@@ -444,6 +468,10 @@
 
     .contact__info-content {
         margin-left: 32px;
+    }
+
+    .contact__form .form-input-field {
+        width: 60%;
     }
 }
 /* End contact responsive */
