@@ -160,6 +160,7 @@
     max-height: 100%; 
     width: auto;
     height: 250px;
+    border-radius: 8px;
 }
 
 .intro__content {
@@ -188,6 +189,7 @@
     background-color: ghostwhite;
     min-height: 300px;
     margin-top: 16px;
+    border-radius: 4px;
 }
 
 .products__category-title {
@@ -211,6 +213,7 @@
 .products__item {
     margin-top: 16px;
     background-color: ghostwhite;
+    border-radius: 4px;
 }
 
 .products__item-img {
@@ -218,6 +221,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .products__item-name {
@@ -247,6 +252,7 @@
     font-weight: 400;
     text-wrap: nowrap;
     overflow: hidden;
+    padding-bottom: 4px;
 }
 /* End Products CSS */
 
@@ -284,6 +290,7 @@
     width: 70%;
     padding: 8px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 #contact__form-message {
