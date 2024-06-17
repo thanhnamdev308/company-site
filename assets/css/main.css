@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-.nav__btn:hover {
+.nav__mobile-wrapper:hover .nav__btn {
     opacity: 0.6;
 }
 
@@ -373,6 +373,10 @@
         display: none;
     }
 
+    .nav__mobile-list {
+        text-align: left;
+    }
+
     .nav {
         text-align: center;
     }
@@ -391,13 +395,9 @@
     .nav__mobile {
         display: block;
     }
-
-    .intro__paragraph {
-        width: 419px;
-    }
 }
 
-@media (max-width: 418px) {
+/* @media (max-width: 418px) {
     .intro__company-image {
         width: 90%;
     }
@@ -405,7 +405,7 @@
     .intro__paragraph {
         width: 90%;
     }
-}
+} */
 /* End nav responsive */
 
 /* intro responsive */
@@ -428,6 +428,16 @@
 
     .intro__paragraph {
         width: 80%;
+    }
+}
+
+@media (max-width: 418px) {
+    .intro__company-image {
+        width: 90%;
+    }
+
+    .intro__paragraph {
+        width: 90%;
     }
 }
 /* End intro responsive */
