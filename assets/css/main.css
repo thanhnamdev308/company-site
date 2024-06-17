@@ -181,10 +181,6 @@
     padding-top: 42px;
 }
 
-/* .products__filter {
-    background-color: bisque;
-} */
-
 .products__filter-content {
     background-color: ghostwhite;
     min-height: 300px;
@@ -396,16 +392,6 @@
         display: block;
     }
 }
-
-/* @media (max-width: 418px) {
-    .intro__company-image {
-        width: 90%;
-    }
-
-    .intro__paragraph {
-        width: 90%;
-    }
-} */
 /* End nav responsive */
 
 /* intro responsive */
